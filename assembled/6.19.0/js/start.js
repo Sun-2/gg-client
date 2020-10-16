@@ -1,3 +1,4 @@
+console.log('asd');
 /*!
 * Zaglądasz do kodu? To świetnie! Każdy dobry webdeveloper to robi :)
 * Szukasz ciekawej pracy? pisz na adres praca@gadu-gadu.pl z dopiskiem PAI

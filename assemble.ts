@@ -1,11 +1,14 @@
 import { promises as fsp } from "fs";
 
+console.log(process.argv);
+process.exit();
+
 (async () => {
   const members = await fsp.readdir("disassembled");
 
   const code = await Promise.all(
     members.map((fileName) =>
-      fsp.readFile("disassembled/" + fileName, { encoding: "utf8" })
+      fsp.readFile("disassembled/" + fileName, {encoding: "utf8"})
     )
   );
 

@@ -1,11 +1,26 @@
 chrome.webRequest.onBeforeRequest.addListener(
   (details) => {
-    console.log(details.url);
+    const url = new URL(details.url);
+    const searchParams = new URLSearchParams(url.search);
+
+    if (!url.pathname.endsWith(".js")) return;
+    if (searchParams.get("redirect") === "false") {
+      searchParams.delete("redirect");
+      url.search = searchParams.toString();
+      return {
+        redirectUrl: url.toString(),
+      };
+    }
+
+    url.host = "localhost";
+    url.port = "6969";
+    url.protocol = "http";
+    url.search = "?originalLink=" + details.url;
 
     return {
-      redirectUrl: "http://localhost:6969/start.js",
+      redirectUrl: url.toString(),
     };
   },
-  { urls: ["https://s1.gg.pl/6.19.0/js/start.js"] },
+  { urls: ["*://*.gg.pl/*"] },
   ["blocking"]
 );

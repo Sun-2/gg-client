@@ -4,6 +4,8 @@ import generate from "@babel/generator";
 import fetch from "node-fetch";
 
 (async () => {
+  const url = ""
+
   const resp = await fetch("https://s1.gg.pl/6.19.0/js/start.js");
   const txt = await resp.text();
 
