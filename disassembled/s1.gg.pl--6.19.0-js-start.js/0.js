@@ -6,5 +6,6 @@
 *
 */
 function j(c) {
+  console.log('TOPKEK')
   throw c;
 }
