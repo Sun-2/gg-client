@@ -1,26 +1,12 @@
-import websocket from "websocket";
+import express from 'express';
+import * as fs from 'fs';
+const app = express();
 
-const client = new websocket.client({});
-
-client.on("connect", (conn) => {
-  console.log("connect");
-  conn.on("message", (data) => {
-
-    const buffer = data.binaryData!;
-    buffer.swap16();
-    var o = new Uint8Array(data.binaryData!);
-    let p = Array(o.length);
-    for (let e = 0; e < o.length; e++) {
-      p[e] = String.fromCharCode(o[e])
-    }
-    p = p.join("") as any;
-    console.log(p);
-
+app.get('/script.js', (req, res) => {
+  fs.readFile("./script.js", {encoding: "utf8"}, (err, data) => {
+    res.send(data);
+    res.end();
   });
 });
 
-client.connect("wss://ggproxy-14.gadu-gadu.pl");
-
-console.clear();
-
-console.log("ads");
+app.listen(6969);
