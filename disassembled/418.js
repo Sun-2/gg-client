@@ -1,0 +1,1 @@
+Int64.wya = Int64.ONE;

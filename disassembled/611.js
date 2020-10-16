@@ -1,0 +1,1 @@
+FABridge.TYPE_ANONYMOUS = 4;

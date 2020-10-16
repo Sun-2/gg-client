@@ -1,0 +1,4 @@
+var E = {
+  auth: {},
+  models: {}
+};

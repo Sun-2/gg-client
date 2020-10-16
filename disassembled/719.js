@@ -1,0 +1,1 @@
+C.getConfig = C.ca.Da.getConfig;

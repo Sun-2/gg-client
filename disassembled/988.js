@@ -1,0 +1,1 @@
+E.f.layout.va.al = "ggpl.gui.layout.widgets.InlineEditWidget";

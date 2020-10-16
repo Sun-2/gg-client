@@ -1,0 +1,1 @@
+E.f.windows.HY = "ggpl.gui.windows.StartAdWindow";

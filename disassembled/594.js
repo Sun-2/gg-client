@@ -1,0 +1,1 @@
+gg.aa.protocol.ba.zw.OK = new gg.aa.protocol.ba.zw();

@@ -1,0 +1,1 @@
+gg.aa.protocol.ba.wba = 4194304;

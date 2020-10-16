@@ -1,12 +1,14 @@
-import express from 'express';
-import * as fs from 'fs';
-const app = express();
+import { parse } from "@babel/parser";
+import * as fs from "fs";
+import generate from "@babel/generator";
 
-app.get('/script.js', (req, res) => {
-  fs.readFile("./script.js", {encoding: "utf8"}, (err, data) => {
-    res.send(data);
-    res.end();
+const code = fs.readFileSync("script.js", { encoding: "utf8" });
+const parsed = parse(code);
+
+
+let a = 0;
+for (const node of parsed.program.body) {
+  fs.writeFile(`./members/${a++}.js`, generate(node).code, () => {
+    console.log(a);
   });
-});
-
-app.listen(6969);
+}

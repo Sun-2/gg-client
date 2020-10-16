@@ -1,0 +1,1 @@
+typeof GGCommon == "undefined" && (GGCommon = {});

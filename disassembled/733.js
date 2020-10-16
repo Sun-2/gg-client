@@ -1,0 +1,1 @@
+window.eht = C.ca.Dc.htmlText;

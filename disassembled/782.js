@@ -1,0 +1,1 @@
+E.api.nT = "ggpl.api.Nemesis";

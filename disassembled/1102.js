@@ -1,0 +1,1 @@
+E.f.profile.vc.Vq = "ggpl.gui.profile.myprofile.MyProfileAvatarPicker";

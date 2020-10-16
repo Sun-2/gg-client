@@ -1,0 +1,1 @@
+String.AA = gg.aa.protocol.ba.Kc.AA;

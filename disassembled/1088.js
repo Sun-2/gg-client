@@ -1,0 +1,1 @@
+E.f.profile.conference.HQ = "ggpl.gui.profile.conference.ConferenceProfileHeader";

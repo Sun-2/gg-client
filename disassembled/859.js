@@ -1,0 +1,1 @@
+E.f.sb.AO = "ggpl.gui.main.AccountConfirm";

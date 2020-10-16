@@ -1,0 +1,1 @@
+FABridge.TYPE_JSFUNCTION = 3;

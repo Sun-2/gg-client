@@ -1,0 +1,1 @@
+E.stores.LC = "E.stores.LC";

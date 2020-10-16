@@ -1,0 +1,1 @@
+window.nl2br = C.ca.Dc.nl2br;

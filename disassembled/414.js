@@ -1,0 +1,1 @@
+Int64.ZERO = new Int64([0], 0);

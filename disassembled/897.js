@@ -1,0 +1,1 @@
+E.f.Tb.YR = "ggpl.gui.common.FontSettings";

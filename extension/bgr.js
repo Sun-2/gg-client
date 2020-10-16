@@ -3,7 +3,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     console.log(details.url);
 
     return {
-      redirectUrl: "http://localhost:6969/script.js",
+      redirectUrl: "http://localhost:6969/start.js",
     };
   },
   { urls: ["https://s1.gg.pl/6.19.0/js/start.js"] },

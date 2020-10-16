@@ -1,0 +1,1 @@
+C.stores.Store = "C.stores.Store";

@@ -1,0 +1,1 @@
+Int64.vya = Int64.ZERO;

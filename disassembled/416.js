@@ -1,0 +1,1 @@
+Int64.WS = new Int64(Int64.ONE.Ua, -1);

@@ -1,0 +1,1 @@
+typeof gg == "undefined" && (gg = t());

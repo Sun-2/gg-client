@@ -1,0 +1,1 @@
+FABridge.instances = {};
